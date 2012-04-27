@@ -1,0 +1,555 @@
+keymap2 Keitai_0 : Global
+keymap2 Keitai_1 : Global
+keymap2 Keitai_2 : Global
+keymap2 Keitai_3 : Global
+keymap2 Keitai_4 : Global
+keymap2 Keitai_5 : Global
+keymap2 Keitai_6 : Global
+keymap2 Keitai_7 : Global
+keymap2 Keitai_8 : Global
+keymap2 Keitai_9 : Global
+keymap2 Keitai_ : Global
+
+keymap2 Keitai____ : Global
+ key *IC-IL-Num0 => BS &Prefix(Keitai_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_ : Global
+ key *IC-IL-Num0 => &Prefix(Keitai__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_9_9_9_9_9 : Global
+ key *IC-IL-Num3 => BS R A &Prefix(Keitai_9)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_9_9_9_9 : Global
+ key *IC-IL-Num3 => BS R O &Prefix(Keitai_9_9_9_9_9)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_9_9_9 : Global
+ key *IC-IL-Num3 => BS R E &Prefix(Keitai_9_9_9_9)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_9_9 : Global
+ key *IC-IL-Num3 => BS R U &Prefix(Keitai_9_9_9)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_9 : Global
+ key *IC-IL-Num3 => BS R I &Prefix(Keitai_9_9)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_8_8_8_8_8_8 : Global
+ key *IC-IL-Num2 => BS Y A &Prefix(Keitai_8)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_8_8_8_8_8 : Global
+ key *IC-IL-Num2 => BS X Y O &Prefix(Keitai_8_8_8_8_8_8)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_8_8_8_8 : Global
+ key *IC-IL-Num2 => BS X Y U &Prefix(Keitai_8_8_8_8_8)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_8_8_8 : Global
+ key *IC-IL-Num2 => BS X Y A &Prefix(Keitai_8_8_8_8)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_8_8 : Global
+ key *IC-IL-Num2 => BS Y O &Prefix(Keitai_8_8_8)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_8 : Global
+ key *IC-IL-Num2 => BS Y U &Prefix(Keitai_8_8)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_7_7_7_7_7 : Global
+ key *IC-IL-Num1 => BS M A &Prefix(Keitai_7)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_7_7_7_7 : Global
+ key *IC-IL-Num1 => BS M O &Prefix(Keitai_7_7_7_7_7)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_7_7_7 : Global
+ key *IC-IL-Num1 => BS M E &Prefix(Keitai_7_7_7_7)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_7_7 : Global
+ key *IC-IL-Num1 => BS M U &Prefix(Keitai_7_7_7)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_7 : Global
+ key *IC-IL-Num1 => BS M I &Prefix(Keitai_7_7)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+
+keymap2 Keitai_6_6_6_6_6_ : Global
+
+keymap2 Keitai_6_6_6_6_6____ : Global
+ key *IC-IL-Num0 => BS BS B O &Prefix(Keitai_6_6_6_6_6_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6_6_6___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_6_6_6_6_6____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6_6_6__ : Global
+ key *IC-IL-Num0 => BS H O Comma &Prefix(Keitai_6_6_6_6_6___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6_6_6_ : Global
+ key *IC-IL-Num0 => BS P O &Prefix(Keitai_6_6_6_6_6__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6_6_6 : Global
+ key *IC-IL-Num6 => BS H A &Prefix(Keitai_6)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS B O &Prefix(Keitai_6_6_6_6_6_)
+
+keymap2 Keitai_6_6_6_6_ : Global
+
+keymap2 Keitai_6_6_6_6____ : Global
+ key *IC-IL-Num0 => BS BS B E &Prefix(Keitai_6_6_6_6_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6_6___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_6_6_6_6____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6_6__ : Global
+ key *IC-IL-Num0 => BS H E Comma &Prefix(Keitai_6_6_6_6___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6_6_ : Global
+ key *IC-IL-Num0 => BS P E &Prefix(Keitai_6_6_6_6__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6_6 : Global
+ key *IC-IL-Num6 => BS H O &Prefix(Keitai_6_6_6_6_6)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS B E &Prefix(Keitai_6_6_6_6_)
+
+keymap2 Keitai_6_6_6_ : Global
+
+keymap2 Keitai_6_6_6____ : Global
+ key *IC-IL-Num0 => BS BS B U &Prefix(Keitai_6_6_6_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_6_6_6____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6__ : Global
+ key *IC-IL-Num0 => BS F U Comma &Prefix(Keitai_6_6_6___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6_ : Global
+ key *IC-IL-Num0 => BS P U &Prefix(Keitai_6_6_6__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_6 : Global
+ key *IC-IL-Num6 => BS H E &Prefix(Keitai_6_6_6_6)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS B U &Prefix(Keitai_6_6_6_)
+
+keymap2 Keitai_6_6_ : Global
+
+keymap2 Keitai_6_6____ : Global
+ key *IC-IL-Num0 => BS BS B I &Prefix(Keitai_6_6_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_6_6____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6__ : Global
+ key *IC-IL-Num0 => BS H I Comma &Prefix(Keitai_6_6___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6_ : Global
+ key *IC-IL-Num0 => BS P I &Prefix(Keitai_6_6__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_6 : Global
+ key *IC-IL-Num6 => BS F U &Prefix(Keitai_6_6_6)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS B I &Prefix(Keitai_6_6_)
+
+keymap2 Keitai_6_ : Global
+
+keymap2 Keitai_6____ : Global
+ key *IC-IL-Num0 => BS BS B A &Prefix(Keitai_6_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_6____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6__ : Global
+ key *IC-IL-Num0 => BS H A Comma &Prefix(Keitai_6___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6_ : Global
+ key *IC-IL-Num0 => BS P A &Prefix(Keitai_6__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_6 : Global
+ key *IC-IL-Num6 => BS H I &Prefix(Keitai_6_6)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS B A &Prefix(Keitai_6_)
+keymap2 Keitai_5_5_5_5_5 : Global
+ key *IC-IL-Num5 => BS N A &Prefix(Keitai_5)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_5_5_5_5 : Global
+ key *IC-IL-Num5 => BS N O &Prefix(Keitai_5_5_5_5_5)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_5_5_5 : Global
+ key *IC-IL-Num5 => BS N E &Prefix(Keitai_5_5_5_5)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_5_5 : Global
+ key *IC-IL-Num5 => BS N U &Prefix(Keitai_5_5_5)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_5 : Global
+ key *IC-IL-Num5 => BS N I &Prefix(Keitai_5_5)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_4_4_4_4_4_4 : Global
+ key *IC-IL-Num4 => BS T A &Prefix(Keitai_4)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+
+keymap2 Keitai_4_4_4_4_4_ : Global
+
+keymap2 Keitai_4_4_4_4_4____ : Global
+ key *IC-IL-Num0 => BS BS D O &Prefix(Keitai_4_4_4_4_4_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4_4_4___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_4_4_4_4_4____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4_4_4__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_4_4_4_4_4___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4_4_4_ : Global
+ key *IC-IL-Num0 => BS T O &Prefix(Keitai_4_4_4_4_4__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4_4_4 : Global
+ key *IC-IL-Num4 => BS X T U &Prefix(Keitai_4_4_4_4_4_4)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS D O &Prefix(Keitai_4_4_4_4_4_)
+
+keymap2 Keitai_4_4_4_4_ : Global
+
+keymap2 Keitai_4_4_4_4____ : Global
+ key *IC-IL-Num0 => BS BS D E &Prefix(Keitai_4_4_4_4_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4_4___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_4_4_4_4____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4_4__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_4_4_4_4___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4_4_ : Global
+ key *IC-IL-Num0 => BS T E &Prefix(Keitai_4_4_4_4__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4_4 : Global
+ key *IC-IL-Num4 => BS T O &Prefix(Keitai_4_4_4_4_4)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS D E &Prefix(Keitai_4_4_4_4_)
+
+keymap2 Keitai_4_4_4_ : Global
+
+keymap2 Keitai_4_4_4____ : Global
+ key *IC-IL-Num0 => BS BS D U &Prefix(Keitai_4_4_4_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_4_4_4____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_4_4_4___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4_ : Global
+ key *IC-IL-Num0 => BS T U &Prefix(Keitai_4_4_4__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_4 : Global
+ key *IC-IL-Num4 => BS T E &Prefix(Keitai_4_4_4_4)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS D U &Prefix(Keitai_4_4_4_)
+
+keymap2 Keitai_4_4_ : Global
+
+keymap2 Keitai_4_4____ : Global
+ key *IC-IL-Num0 => BS BS D I &Prefix(Keitai_4_4_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_4_4____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_4_4___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4_ : Global
+ key *IC-IL-Num0 => BS T I &Prefix(Keitai_4_4__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_4 : Global
+ key *IC-IL-Num4 => BS T U &Prefix(Keitai_4_4_4)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS D I &Prefix(Keitai_4_4_)
+
+keymap2 Keitai_4_ : Global
+
+keymap2 Keitai_4____ : Global
+ key *IC-IL-Num0 => BS BS D A &Prefix(Keitai_4_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_4____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_4___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4_ : Global
+ key *IC-IL-Num0 => BS T A &Prefix(Keitai_4__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_4 : Global
+ key *IC-IL-Num4 => BS T I &Prefix(Keitai_4_4)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS D A &Prefix(Keitai_4_)
+
+keymap2 Keitai_3_3_3_3_3_ : Global
+
+keymap2 Keitai_3_3_3_3_3____ : Global
+ key *IC-IL-Num0 => BS BS Z O &Prefix(Keitai_3_3_3_3_3_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3_3_3___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_3_3_3_3_3____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3_3_3__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_3_3_3_3_3___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3_3_3_ : Global
+ key *IC-IL-Num0 => BS S O &Prefix(Keitai_3_3_3_3_3__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3_3_3 : Global
+ key *IC-IL-Num9 => BS S A &Prefix(Keitai_3)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS Z O &Prefix(Keitai_3_3_3_3_3_)
+
+keymap2 Keitai_3_3_3_3_ : Global
+
+keymap2 Keitai_3_3_3_3____ : Global
+ key *IC-IL-Num0 => BS BS Z E &Prefix(Keitai_3_3_3_3_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3_3___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_3_3_3_3____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3_3__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_3_3_3_3___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3_3_ : Global
+ key *IC-IL-Num0 => BS S E &Prefix(Keitai_3_3_3_3__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3_3 : Global
+ key *IC-IL-Num9 => BS S O &Prefix(Keitai_3_3_3_3_3)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS Z E &Prefix(Keitai_3_3_3_3_)
+
+keymap2 Keitai_3_3_3_ : Global
+
+keymap2 Keitai_3_3_3____ : Global
+ key *IC-IL-Num0 => BS BS Z U &Prefix(Keitai_3_3_3_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_3_3_3____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_3_3_3___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3_ : Global
+ key *IC-IL-Num0 => BS S U &Prefix(Keitai_3_3_3__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_3 : Global
+ key *IC-IL-Num9 => BS S E &Prefix(Keitai_3_3_3_3)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS Z U &Prefix(Keitai_3_3_3_)
+
+keymap2 Keitai_3_3_ : Global
+
+keymap2 Keitai_3_3____ : Global
+ key *IC-IL-Num0 => BS BS J I &Prefix(Keitai_3_3_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_3_3____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_3_3___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3_ : Global
+ key *IC-IL-Num0 => BS S I &Prefix(Keitai_3_3__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_3 : Global
+ key *IC-IL-Num9 => BS S U &Prefix(Keitai_3_3_3)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS J I &Prefix(Keitai_3_3_)
+
+keymap2 Keitai_3_ : Global
+
+keymap2 Keitai_3____ : Global
+ key *IC-IL-Num0 => BS BS Z A &Prefix(Keitai_3_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_3____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_3___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3_ : Global
+ key *IC-IL-Num0 => BS S A &Prefix(Keitai_3__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_3 : Global
+ key *IC-IL-Num9 => BS S I &Prefix(Keitai_3_3)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS Z A &Prefix(Keitai_3_)
+
+keymap2 Keitai_2_2_2_2_2_ : Global
+
+keymap2 Keitai_2_2_2_2_2____ : Global
+ key *IC-IL-Num0 => BS BS G O &Prefix(Keitai_2_2_2_2_2_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2_2_2___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_2_2_2_2_2____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2_2_2__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_2_2_2_2_2___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2_2_2_ : Global
+ key *IC-IL-Num0 => BS K O &Prefix(Keitai_2_2_2_2_2__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2_2_2 : Global
+ key *IC-IL-Num8 => BS K A &Prefix(Keitai_2)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS G O &Prefix(Keitai_2_2_2_2_2_)
+
+keymap2 Keitai_2_2_2_2_ : Global
+
+keymap2 Keitai_2_2_2_2____ : Global
+ key *IC-IL-Num0 => BS BS G E &Prefix(Keitai_2_2_2_2_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2_2___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_2_2_2_2____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2_2__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_2_2_2_2___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2_2_ : Global
+ key *IC-IL-Num0 => BS K E &Prefix(Keitai_2_2_2_2__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2_2 : Global
+ key *IC-IL-Num8 => BS K O &Prefix(Keitai_2_2_2_2_2)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS G E &Prefix(Keitai_2_2_2_2_)
+
+keymap2 Keitai_2_2_2_ : Global
+
+keymap2 Keitai_2_2_2____ : Global
+ key *IC-IL-Num0 => BS BS G U &Prefix(Keitai_2_2_2_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_2_2_2____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_2_2_2___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2_ : Global
+ key *IC-IL-Num0 => BS K U &Prefix(Keitai_2_2_2__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_2 : Global
+ key *IC-IL-Num8 => BS K E &Prefix(Keitai_2_2_2_2)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS G U &Prefix(Keitai_2_2_2_)
+
+keymap2 Keitai_2_2_ : Global
+
+keymap2 Keitai_2_2____ : Global
+ key *IC-IL-Num0 => BS BS G I &Prefix(Keitai_2_2_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_2_2____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_2_2___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2_ : Global
+ key *IC-IL-Num0 => BS K I &Prefix(Keitai_2_2__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_2 : Global
+ key *IC-IL-Num8 => BS K U &Prefix(Keitai_2_2_2)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS G I &Prefix(Keitai_2_2_)
+
+keymap2 Keitai_2_ : Global
+
+keymap2 Keitai_2____ : Global
+ key *IC-IL-Num0 => BS BS G A &Prefix(Keitai_2_)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2___ : Global
+ key *IC-IL-Num0 => BS FullStop &Prefix(Keitai_2____)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2__ : Global
+ key *IC-IL-Num0 => Comma &Prefix(Keitai_2___)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2_ : Global
+ key *IC-IL-Num0 => BS K A &Prefix(Keitai_2__)
+ key *IC-IL-¨ => &Ignore
+keymap2 Keitai_2 : Global
+ key *IC-IL-Num8 => BS K I &Prefix(Keitai_2_2)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => BS G A &Prefix(Keitai_2_)
+keymap2 Keitai_1_1_1_1_1_1_1_1_1_1 : Global
+ key *IC-IL-Num7 => BS A &Prefix(Keitai_1)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_1_1_1_1_1_1_1_1_1 : Global
+ key *IC-IL-Num7 => BS X O &Prefix(Keitai_1_1_1_1_1_1_1_1_1_1)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_1_1_1_1_1_1_1_1 : Global
+ key *IC-IL-Num7 => BS X E &Prefix(Keitai_1_1_1_1_1_1_1_1_1)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_1_1_1_1_1_1_1 : Global
+ key *IC-IL-Num7 => BS X U &Prefix(Keitai_1_1_1_1_1_1_1_1)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_1_1_1_1_1_1 : Global
+ key *IC-IL-Num7 => BS X I &Prefix(Keitai_1_1_1_1_1_1_1)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_1_1_1_1_1 : Global
+ key *IC-IL-Num7 => BS X A &Prefix(Keitai_1_1_1_1_1_1)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_1_1_1_1 : Global
+ key *IC-IL-Num7 => BS O &Prefix(Keitai_1_1_1_1_1)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_1_1_1 : Global
+ key *IC-IL-Num7 => BS E &Prefix(Keitai_1_1_1_1)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_1_1 : Global
+ key *IC-IL-Num7 => BS U &Prefix(Keitai_1_1_1)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_1 : Global
+ key *IC-IL-Num7 => BS I &Prefix(Keitai_1_1)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_0_0_0 : Global
+ key *IC-IL-NumFullStop => BS W A &Prefix(Keitai_0)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_0_0 : Global
+ key *IC-IL-NumFullStop => BS N N &Prefix(Keitai_0_0_0)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap2 Keitai_0 : Global
+ key *IC-IL-NumFullStop => BS W O &Prefix(Keitai_0_0)
+ key *IC-IL-¨ => &Ignore
+ key *IC-IL-Num0 => &Prefix(Keitai_)
+keymap Global
+ key *IC-IL-NumFullStop => W A &Prefix(Keitai_0)
+ key *IC-IL-Num7 => A &Prefix(Keitai_1)
+ key *IC-IL-Num8 => K A &Prefix(Keitai_2)
+ key *IC-IL-Num9 => S A &Prefix(Keitai_3)
+ key *IC-IL-Num4 => T A &Prefix(Keitai_4)
+ key *IC-IL-Num5 => N A &Prefix(Keitai_5)
+ key *IC-IL-Num6 => H A &Prefix(Keitai_6)
+ key *IC-IL-Num1 => M A &Prefix(Keitai_7)
+ key *IC-IL-Num2 => Y A &Prefix(Keitai_8)
+ key *IC-IL-Num3 => R A &Prefix(Keitai_9)

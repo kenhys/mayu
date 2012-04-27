@@ -1,0 +1,9 @@
+if (LINUX) 
+include "linux109.mayu"
+else
+if (MAC)
+include "mac109.mayu"
+else
+include "windows109.mayu"
+endif
+endif

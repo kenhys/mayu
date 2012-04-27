@@ -1,0 +1,176 @@
+私家版
+mayu for linux
+mayu for mac (Darwin)
+ver 0.12.1 2011/11/04
+---------------------
+窓使いの憂鬱(mayu) ver 3.30を linux と mac で使えるように改造したものです。
+まだ一部の機能しか使うことが出来ません。
+現状はこんな感じです。
+
+ o キー置き換えは大体使える
+ x ウィンドウクラス/タイトル名 の指定は使用不可
+ x FUNCTION は使用不可(全部)
+ x GUIとか無い
+ x 日本語のキー名は使えない
+
+使用方法
+========
+* 起動コマンド
+  root権限で実行して下さい。
+   
+  mayu [options ...]
+
+  options :
+    -Dsymbol        symbol というシンボル名を定義(いくつでも)
+    -v                ログの詳細表示
+
+* 設定ファイル
+  ホームディレクトリに .mayu という名前のファイルを作成して、設定を記述して下さい。
+
+  データディレクトリに参考用の設定ファイルとか色々入ってます。
+  データディレクトリは、通常 /usr/local/share/mayu あたりです。  
+
+  include による設定ファイルの検索順序は、まずホームディレクトリ内で指定ファイルを探し、
+  ファイルがみつからなければデータディレクトリ内のファイルを探します。
+
+* 留意点
+  - mac版の Command キーと Option キーについて
+      mac版での Command キーのモディファイヤ名(モディファイヤキーとしての名前)は Windows です。
+      Option キーのモディファイヤ名は Alt です。
+
+  - キーコードとキー定義ファイルについて
+      キーが押されたときに検出する スキャンコード/キーコード は
+    本家windows版、linux版、mac版でそれぞれ別々のものとなっています。
+  
+      そのため、データディレクトリ下にある 109.mayu と 104.mayu が本家windows版のものとは別物です。
+
+  - 日本語のキー名はサポートしません。
+
+----------------------------------------
+INSTALL
+
+Linuxへのインストール準備
+======================
+* Linux kernel 2.6 以上を対象としています。
+
+* 次のライブラリやプログラムに依存しています。
+    * g++
+    * libusb-1.0
+    * libudev
+    * boost
+      libboost と libboost-regex が必要です。
+
+  * Fedoraでは次のパッケージをインストールして下さい。
+    gcc-c++
+    boost-devel
+    libudev-devel
+    libusb1-devel
+  
+  * Debian系(Debian, Ubuntu, Mint)では次のもの又は類似のパッケージをインストールして下さい。
+    g++
+    libboost-regex-dev
+    libboost-dev
+    libudev-dev
+    libusb-1.0-0-dev 
+
+* uinput
+  uinput がロードされている必要があります。
+  mayu を起動する前に、次のコマンドでモジュールのロードを行ってください。
+
+  # modprobe uinput        (root権限で実行)
+
+  Debian系(Debian, Ubuntu, Mint)で起動時に自動的にモジュールをロードさせるには、
+  /etc/modules に
+
+  uinput
+
+  という一行を追記して、
+
+  # update-modules        (root権限で実行)
+ 
+  を実行して下さい。
+
+Mac (Darwin) へのインストール準備
+==============================
+* MacOSX 10.4、MacOSX 10.5、MacOSX 10.6、Darwin 8.0 を対象としています。
+
+* Xcode (MacOSX 10.4、MacOSX 10.5、MacOSX 10.6)
+  Xcodeが必要です。要インストール。
+
+* boost
+  boostとlibboost-regexが必要です。
+  インストールされていない場合は、次のどちらかの手順でインストールして下さい。
+
+  [方法1] boost本家からダウンロードしてインストール
+      あらかじめXcodeがインストールされている必要があります。
+  
+    http://www.boost.org/users/download/
+      から boost の最新版をダウンロードしてきて、展開したディレクトリ上で
+  
+    $ ./configure && make && sudo make install
+  
+    を実行して下さい。
+
+  [方法2] MacPortsを使ってインストール
+      MacPorts (http://www.macports.org/)を使ってインストールする場合は、
+      MacPorts インストール後、
+  
+      $ sudo port install boost
+    
+      もしくは
+    
+      $ sudo /opt/local/bin/port install boost
+
+      でインストール出来ます。
+
+* Darwin 8.0 へのインストール
+    make する前に、mayu のソースディレクトリ内の ./d/darwin/Info.plist をテキストエディタで編集して、
+    
+            <!-- <key>OSBundleRequired</key> -->
+            <!-- <string>Console</string>     -->
+
+    の箇所を
+            
+            <key>OSBundleRequired</key>
+            <string>Console</string>
+
+    に置き換えてください。
+  
+インストール
+============
+コマンドライン上で mayu のソースディレクトリに移動し、
+
+$ ./configure
+$ make
+# make install        (root権限で実行)
+
+を実行して下さい。
+
+アンインストール
+============
+コマンドライン上で mayu のソースディレクトリに移動し、
+
+# make uninstall        (root権限で実行)
+
+を実行して下さい。
+mac版では、この後再起動を行ってください。
+
+
+BUG
+===
+・mac版で Mayu.kext の kextunload 後にキーボードを取り外すと Kernel Panicが発生する
+・mac版で CapsLockキーが動かない
+
+制限事項
+========
+・linux版で、mayu 起動後に、PCに新たにキーボードを接続した場合、
+  そのキーボードの入力に対して、mayu は処理を行いません。
+  mayu を再起動することで、新たに接続したキーボードに対しても処理が行われるようになります。
+
+
+注意
+====
+質問等は2chの窓使いの憂鬱スレへ。
+http://hibari.2ch.net/test/read.cgi/software/1280042042/l50
+
+また、このソフトについての質問は、本家windows版の作者様にはしないようお願いします。

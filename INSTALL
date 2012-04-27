@@ -1,0 +1,105 @@
+Linuxへのインストール準備
+======================
+* Linux kernel 2.6 以上を対象としています。
+
+* 次のライブラリやプログラムに依存しています。
+    * g++
+    * libusb-1.0
+    * libudev
+    * boost
+      libboost と libboost-regex が必要です。
+
+  * Fedoraでは次のパッケージをインストールして下さい。
+    gcc-c++
+    boost-devel
+    libudev-devel
+    libusb1-devel
+  
+  * Debian系(Debian, Ubuntu, Mint)では次のもの又は類似のパッケージをインストールして下さい。
+    g++
+    libboost-regex-dev
+    libboost-dev
+    libudev-dev
+    libusb-1.0-0-dev 
+
+* uinput
+  uinput がロードされている必要があります。
+  mayu を起動する前に、次のコマンドでモジュールのロードを行ってください。
+
+  # modprobe uinput        (root権限で実行)
+
+  Debian系(Debian, Ubuntu, Mint)で起動時に自動的にモジュールをロードさせるには、
+  /etc/modules に
+
+  uinput
+
+  という一行を追記して、
+
+  # update-modules        (root権限で実行)
+ 
+  を実行して下さい。
+
+Mac (Darwin) へのインストール準備
+==============================
+* MacOSX 10.4、MacOSX 10.5、MacOSX 10.6、Darwin 8.0 を対象としています。
+
+* Xcode (MacOSX 10.4、MacOSX 10.5、MacOSX 10.6)
+  Xcodeが必要です。要インストール。
+
+* boost
+  boostとlibboost-regexが必要です。
+  インストールされていない場合は、次のどちらかの手順でインストールして下さい。
+
+  [方法1] boost本家からダウンロードしてインストール
+      あらかじめXcodeがインストールされている必要があります。
+  
+    http://www.boost.org/users/download/
+      から boost の最新版をダウンロードしてきて、展開したディレクトリ上で
+  
+    $ ./configure && make && sudo make install
+  
+    を実行して下さい。
+
+  [方法2] MacPortsを使ってインストール
+      MacPorts (http://www.macports.org/)を使ってインストールする場合は、
+      MacPorts インストール後、
+  
+      $ sudo port install boost
+    
+      もしくは
+    
+      $ sudo /opt/local/bin/port install boost
+
+      でインストール出来ます。
+
+* Darwin 8.0 へのインストール
+    make する前に、mayu のソースディレクトリ内の ./d/darwin/Info.plist をテキストエディタで編集して、
+    
+            <!-- <key>OSBundleRequired</key> -->
+            <!-- <string>Console</string>     -->
+
+    の箇所を
+            
+            <key>OSBundleRequired</key>
+            <string>Console</string>
+
+    に置き換えてください。
+  
+インストール
+============
+コマンドライン上で mayu のソースディレクトリに移動し、
+
+$ ./configure
+$ make
+# make install        (root権限で実行)
+
+を実行して下さい。
+
+アンインストール
+============
+コマンドライン上で mayu のソースディレクトリに移動し、
+
+# make uninstall        (root権限で実行)
+
+を実行して下さい。
+mac版では、この後再起動を行ってください。

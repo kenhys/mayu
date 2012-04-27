@@ -1,0 +1,18 @@
+define KBD101
+define KBD102
+define KBD104
+define KBD105
+define KBD107
+define KBD108
+
+if (LINUX)
+include "linux104.mayu"
+else
+if (MAC)
+include "mac104.mayu"
+else
+if (WINDOWS)
+include "windows104.mayu"
+endif
+endif
+endif
