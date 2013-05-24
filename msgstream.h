@@ -83,7 +83,7 @@ public:
       m_msgDebugLevel(0)
   {
     ASSERT(m_buf);
-    setp(m_buf, m_buf + SIZE);
+    this->setp(m_buf, m_buf + SIZE);
   }
   
   ///
@@ -202,14 +202,14 @@ public:
     {
 		if (m_msgDebugLevel <= m_debugLevel)
 			m_str += String(begin, end - begin);
-		setp(m_buf, m_buf + SIZE);
+		this->setp(m_buf, m_buf + SIZE);
     }
     else // end < i
     {
 		if (m_msgDebugLevel <= m_debugLevel)
 			m_str += String(begin, end - begin - 1);
 		m_buf[0] = end[-1];
-		setp(m_buf, m_buf + SIZE);
+		this->setp(m_buf, m_buf + SIZE);
 		basic_streambuf<T, TR>::pbump(1);
     }
     return TR::not_eof(0);
